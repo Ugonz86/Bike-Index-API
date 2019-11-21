@@ -5,14 +5,19 @@
   </head>
   <body>
       <div class="container">
-        <h1>See all the bikes that have been registered as stolen in a given location in the past week</h1>
+        <h1><strong>Stolen Bike Report</strong></h1>
+        <h3>Find stolen bike reports nationwide</h3>
+        <br>
+        <div class="jumbotron" id="searchDiv">
         <label for="location">Enter a location: </label>
         <input type="text" id="location">
-        <button type="btn btn-dark" id="locationButton">Go</button>
-
-        <div class="errors"></div>
-        <div class="showList">
-          <ol id="listDisplay"></ol>
+        <button type="button" class="btn btn-dark" id="locationButton">Go</button>
+        </div>
+        <div class="jumbotron" id="resultDiv">
+          <div class="errors"></div>
+          <div class="showList">
+            <ol id="listDisplay"></ol>
+          </div>
         </div>
       </div>
     </body>
